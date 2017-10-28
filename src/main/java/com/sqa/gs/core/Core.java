@@ -68,6 +68,13 @@ public class Core {
 		return this.log;
 	}
 
+	// Non static method to get a property value given a specific key
+	public String getProp(String propName) {
+		// returns the value of a key absed on a file located in
+		// src/main/resources/config.properties
+		return AutoBasics.getProp(propName, "src/main/resources/", "config.properties", getLog());
+	}
+
 	// Example of a non static implementation of the static helper method
 	public void takeScreenshost() {
 		AutoBasics.takeScreenshot("screenshots/", "Craigslist Test", count, getDriver(), this.getLog());

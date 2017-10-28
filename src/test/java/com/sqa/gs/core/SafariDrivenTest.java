@@ -16,7 +16,7 @@ public class SafariDrivenTest extends Core {
 		// Sets up the WebDriver to use Safari
 		setDriver(new SafariDriver());
 		// Sets the baseURL to sfbay craigslist.com
-		setBaseUrl("https://sfbay.craigslist.org");
+		setBaseUrl("http://adactin.com/HotelApp");
 		// Sets up default implicit wait to wait for 30 seconds
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		// Set up other window options such as fullscreen
